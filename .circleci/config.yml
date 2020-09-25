@@ -13,3 +13,8 @@ jobs:
           name: Install Python 3.6
           command:|
             amazon-linux-extras install python3 -y
+
+      - run:
+          name: install AWS CLI
+          command:|
+            pip3 install awscli
