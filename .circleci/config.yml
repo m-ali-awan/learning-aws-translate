@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image:amazonlinux
+      - image: amazonlinux
 
     working_directory: ~/repo
 
