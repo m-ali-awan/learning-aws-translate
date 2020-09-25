@@ -18,3 +18,9 @@ jobs:
           name: Install AWS CLI
           command: |
             pip3 install awscli
+
+      - run:
+          name: Install Hugo
+          command: |
+            yum install -y hugo
+            hugo version
