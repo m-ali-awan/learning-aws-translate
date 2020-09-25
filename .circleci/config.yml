@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image:amazonlinux
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install Python 3.6
+          command:|
+            amazon-linux-extras install python3 -y
